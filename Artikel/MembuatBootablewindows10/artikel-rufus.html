@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Membuat Bootable Windows 10 dengan Rufus - RuangKreasiKita</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Path CSS disesuaikan -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../../index.html">
+                <span class="ruang">Ruang</span><span class="kreasi">KreasiKita</span>
+            </a>
+        </div>
+        <div class="menu">
+            <a href="../../index.html">Home</a>
+            <a href="../../portofolio.html">Portofolio</a>
+            <a href="../../about.html">About Us</a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="../../index.html">Home</a>
+        <a href="../../portofolio.html">Portofolio</a>
+        <a href="../../about.html">About Us</a>
+    </div>
+
+    <!-- Article Content -->
+    <div class="article-content">
+        <img src="../../img/artikel-rufus .png"
+        alt="Gambar Artikel Rufus"
+        class="article-image">
+        <h1>Cara Membuat Bootable Windows 10 dengan Rufus</h1>
+        <h2>Pendahuluan</h2>
+        <p>Membuat bootable USB drive adalah cara yang efektif untuk menginstal ulang Windows 10, memperbaiki sistem yang rusak, atau menjalankan alat diagnostik. Rufus adalah aplikasi gratis dan ringan yang sangat populer untuk membuat bootable USB drive dengan mudah dan cepat.</p>
+
+        <h2>Persiapan</h2>
+        <p>Sebelum memulai, pastikan Anda memiliki:</p>
+        <ul>
+            <li><strong>USB Drive</strong>: Minimal 8 GB. Pastikan data di dalamnya sudah di-backup karena akan diformat.</li>
+            <li><strong>File ISO Windows 10</strong>: Unduh dari situs resmi Microsoft atau sumber tepercaya lainnya.</li>
+            <li><strong>Rufus</strong>: Unduh aplikasi Rufus terbaru dari situs resminya (<a href="https://rufus.ie/">https://rufus.ie/</a>).</li>
+        </ul>
+
+        <h2>Langkah-langkah</h2>
+        <ol>
+            <li>
+                <h3>Jalankan Rufus</h3>
+                <p>Setelah diunduh, jalankan aplikasi Rufus. Anda tidak perlu menginstalnya.</p>
+            </li>
+            <li>
+                <h3>Pilih USB Drive</h3>
+                <p>Pada bagian "Device", pilih USB drive yang ingin Anda gunakan.</p>
+            </li>
+            <li>
+                <h3>Pilih File ISO</h3>
+                <p>Pada bagian "Boot selection", pilih "Disk or ISO image". Klik tombol "SELECT" dan pilih file ISO Windows 10 yang sudah Anda unduh.</p>
+            </li>
+            <li>
+                <h3>Pengaturan Tambahan (Opsional)</h3>
+                <p>Beberapa pengaturan tambahan yang bisa Anda sesuaikan:</p>
+                <ul>
+                    <li><strong>Partition scheme</strong>: Biasanya, Rufus akan otomatis mendeteksi yang terbaik untuk sistem Anda. Jika Anda yakin, Anda bisa memilih antara "MBR" (untuk sistem BIOS lama) atau "GPT" (untuk sistem UEFI modern).</li>
+                    <li><strong>Target system</strong>: Sesuaikan dengan "Partition scheme". Jika memilih MBR, pilih "BIOS or UEFI". Jika memilih GPT, pilih "UEFI (non CSM)".</li>
+                    <li><strong>File system</strong>: Biasanya "NTFS" adalah pilihan yang baik.</li>
+                    <li><strong>Cluster size</strong>: Biarkan default.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Mulai Proses</h3>
+                <p>Klik tombol "START". Akan muncul peringatan bahwa semua data di USB drive akan dihapus. Klik "OK" untuk melanjutkan.</p>
+            </li>
+            <li>
+                <h3>Tunggu Proses Selesai</h3>
+                <p>Rufus akan mulai memformat USB drive dan menyalin file ISO ke dalamnya. Proses ini mungkin memakan waktu beberapa menit, tergantung pada kecepatan USB drive dan ukuran file ISO.</p>
+            </li>
+            <li>
+                <h3>Selesai</h3>
+                <p>Setelah proses selesai, status akan berubah menjadi "READY". Klik "CLOSE" untuk menutup Rufus.</p>
+            </li>
+        </ol>
+
+        <h2>Kesimpulan</h2>
+        <p>Sekarang Anda memiliki bootable USB drive Windows 10 yang siap digunakan. Anda bisa menggunakannya untuk menginstal atau memperbaiki sistem operasi Windows 10 Anda.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="../../img/logo.png" alt="Logo" class="footer-logo">
+        <p>
+            © 2025 <span class="ruang">Ruang</span><span class="kreasi">KreasiKita</span>. All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

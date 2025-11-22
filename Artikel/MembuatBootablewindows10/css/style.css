@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 60px; /* Tambahkan padding-top sebesar tinggi navbar */
 }
 
 /* Navbar Styling */
@@ -64,7 +65,7 @@ body {
     top: 60px; /* Set sidebar top position to be below navbar */
     right: -250px;
     width: 250px;
-    height: calc(100vh - 60px - 120px); /* Adjust height to not overlap footer */
+    height: calc(100vh - 60px - 60px); /* Adjust height to not overlap footer */
     background-color: #fff;
     padding: 20px;
     transition: right 0.3s ease;
@@ -82,6 +83,56 @@ body {
 
 .sidebar.active {
     right: 0;
+}
+
+/* Article Styling */
+.article-content {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.article-content .article-image {
+    display: block;
+    margin: 0 auto 20px; /* Atur margin atas, bawah, dan tengah horizontal */
+    width: 80%; /* Lebar gambar 80% dari container */
+    max-width: 500px; /* Lebar maksimum gambar 500px */
+    height: auto; /* Tinggi gambar menyesuaikan proporsi aslinya */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Efek bayangan opsional */
+}
+.article-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.article-content h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.article-content h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.article-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.article-content ul {
+    margin-bottom: 15px;
+}
+
+.article-content li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-left: 20px;
 }
 
 /* Header Styling */
@@ -106,18 +157,7 @@ body {
     padding: 20px;
     text-align: center;
 }
-.content .content-image {
-    display: block;
-    margin: 0 auto 20px; /* Atur margin atas, bawah, dan tengah horizontal */
-    width: 85%; /* Lebar gambar 80% dari container */
-    max-width: 400px; /* Lebar maksimum gambar 400px */
-    height: auto; /* Tinggi gambar menyesuaikan proporsi aslinya */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Efek bayangan opsional */
-}
 
-.content h2 a {
-    text-decoration: none; /* Hilangkan garis bawah pada link */
-}
 /* Footer Styling */
 .footer {
     background-color: #3674B5;
@@ -125,11 +165,11 @@ body {
     text-align: center;
     padding: 20px;
     margin-top: auto;
-    height: auto; /* Ensure footer height is flexible */
+    height: auto; /* Ensure footer height is fixed */
 }
 
 .footer-logo {
-    width: 80px;
+    width: 50px;
     margin-bottom: 10px;
 }
 
