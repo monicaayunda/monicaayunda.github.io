@@ -64,7 +64,7 @@ body {
     top: 60px; /* Set sidebar top position to be below navbar */
     right: -250px;
     width: 250px;
-    height: calc(100vh - 60px - 100px); /* Adjust height to not overlap footer */
+    height: calc(100vh - 60px - 120px); /* Adjust height to not overlap footer */
     background-color: #fff;
     padding: 20px;
     transition: right 0.3s ease;
