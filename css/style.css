@@ -1,4 +1,4 @@
-/* Reset CSS */
+/* Reset CSS (jika belum ada) */
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +11,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-top: 60px; /* Tambahkan padding-top sebesar tinggi navbar */
 }
 
-/* Navbar Styling */
+/* Navbar (mengikuti yang sebelumnya) */
 .navbar {
     background-color: #fff;
     display: flex;
@@ -64,7 +65,7 @@ body {
     top: 60px; /* Set sidebar top position to be below navbar */
     right: -250px;
     width: 250px;
-    height: calc(100vh - 60px - 120px); /* Adjust height to not overlap footer */
+    height: calc(100vh - 60px - 60px); /* Adjust height to not overlap footer */
     background-color: #fff;
     padding: 20px;
     transition: right 0.3s ease;
@@ -84,7 +85,7 @@ body {
     right: 0;
 }
 
-/* Header Styling */
+/* Header (Bagian Atas) */
 .header {
     background-color: #A1E3F9;
     text-align: center;
@@ -101,39 +102,134 @@ body {
     color: #666;
 }
 
-/* Content Styling */
-.content {
-    padding: 20px;
+/* Portfolio (Bagian Tengah) */
+.portfolio {
+    padding: 40px 20px;
     text-align: center;
 }
-.content .content-image {
-    display: block;
-    margin: 0 auto 20px; /* Atur margin atas, bawah, dan tengah horizontal */
-    width: 85%; /* Lebar gambar 80% dari container */
-    max-width: 400px; /* Lebar maksimum gambar 400px */
-    height: auto; /* Tinggi gambar menyesuaikan proporsi aslinya */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Efek bayangan opsional */
+
+.portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
-.content h2 a {
-    text-decoration: none; /* Hilangkan garis bawah pada link */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-/* Footer Styling */
+
+.portfolio-item {
+    width: 210px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.portfolio-item h3 {
+    font-size: 1em;
+    margin: 15px;
+}
+
+.portfolio-item p {
+    font-size: 0,5em;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4300ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 0.8em; /* Tambahkan ini untuk menyesuaikan ukuran font */
+}
+
+.portfolio-item a:hover {
+    background-color: #3674B5;
+}
+
+/* About Us (Bagian Bawah) */
+.about-us {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image {
+    width: 150px;
+    border-radius: 10%;
+    margin-right: 30px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Footer (mengikuti yang sebelumnya) */
 .footer {
     background-color: #3674B5;
     color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: auto;
-    height: auto; /* Ensure footer height is flexible */
+    height: auto; /* Ensure footer height is fixed */
 }
 
 .footer-logo {
-    width: 80px;
+    width: 50px;
     margin-bottom: 10px;
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .portfolio-container {
+        justify-content: space-around; /* Distribute items evenly */
+    }
+    .portfolio-item {
+        width: calc(33.33% - 40px); /* Three items in a row on tablets */
+    }
+
+    .portfolio-item h3 {
+        font-size: 1em; /* Tambahkan ini untuk menyesuaikan ukuran font */
+    }
+
+    .portfolio-item p {
+        font-size: 0.5em; /* Tambahkan ini untuk menyesuaikan ukuran font */
+    }
+}
+
 @media (max-width: 768px) {
     .menu {
         display: none;
@@ -142,4 +238,26 @@ body {
     .hamburger {
         display: block;
     }
+    .portfolio-item {
+        width: calc(50% - 40px); /* Two items in a row on phones */
+    }
+
+    .portfolio-item h3 {
+        font-size: 0,7em; /* Tambahkan ini untuk menyesuaikan ukuran font */
+    }
+
+    .portfolio-item p {
+        font-size: 0.6em; /* Tambahkan ini untuk menyesuaikan ukuran font */
+    }
+    .portfolio-item a {
+        padding: 5px 10px;
+        background-color: #4300ff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 3,5px;
+        margin-bottom: 20px;
+        transition: background-color 0.3s ease;
+        font-size: 0.5em;
+    }
+
 }
