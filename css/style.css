@@ -121,6 +121,7 @@ body {
 
 .portfolio-item {
     width: 210px;
+    height: 210px;
     margin: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -141,11 +142,11 @@ body {
 
 .portfolio-item h3 {
     font-size: 1em;
-    margin: 15px;
+    margin: 3px;
 }
 
 .portfolio-item p {
-    font-size: 0,5em;
+    font-size: 0.5em;
     margin: 0 15px 15px;
     color: #666;
 }
@@ -240,10 +241,11 @@ body {
     }
     .portfolio-item {
         width: calc(50% - 40px); /* Two items in a row on phones */
+        height:  calc(50% - 40px);
     }
 
     .portfolio-item h3 {
-        font-size: 0,7em; /* Tambahkan ini untuk menyesuaikan ukuran font */
+        font-size: 0.7em; /* Tambahkan ini untuk menyesuaikan ukuran font */
     }
 
     .portfolio-item p {
@@ -254,10 +256,19 @@ body {
         background-color: #4300ff;
         color: #fff;
         text-decoration: none;
-        border-radius: 3,5px;
-        margin-bottom: 20px;
+        border-radius: 3.5px;
+        margin-bottom: 15px;
         transition: background-color 0.3s ease;
         font-size: 0.5em;
     }
+    /*.portfolio-item {
+        width: 210px;
+        margin: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }*/
 
 }
