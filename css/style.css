@@ -95,7 +95,7 @@ body {
 /* Header (Bagian Atas) */
 .header {
    /* background-color: #A1E3F9;*/
-    background: linear-gradient(to bottom right, #ffee91, #A1E3F9 ,#ffee91); /* Gradasi warna dari biru ke kuning */
+    background: linear-gradient(to bottom right, #f1eeda, #A1E3F9 ,#f1ecd0); /* Gradasi warna dari biru ke kuning */
     color: #000000; /* Warna teks putih agar kontras dengan gradasi */
     text-align: center;
     padding: 100px 20px;
