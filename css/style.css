@@ -87,11 +87,17 @@ body {
 
 /* Header (Bagian Atas) */
 .header {
-    background-color: #A1E3F9;
+   /* background-color: #A1E3F9;*/
+    background: linear-gradient(to bottom right, #ffee91, #A1E3F9 ,#ffee91); /* Gradasi warna dari biru ke kuning */
+    color: #000000; /* Warna teks putih agar kontras dengan gradasi */
     text-align: center;
-    padding: 150px 20px;
+    padding: 100px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+.header .header-logo {
+    width: 30%;
+    margin-bottom: 40px;
+}
 .header h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -99,13 +105,14 @@ body {
 
 .header p {
     font-size: 1.2em;
-    color: #666;
+    color: #000000;
 }
 
 /* Portfolio (Bagian Tengah) */
 .portfolio {
     padding: 40px 20px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio h2 {
