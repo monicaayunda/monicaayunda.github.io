@@ -253,6 +253,9 @@ body {
     .hamburger {
         display: block;
     }
+    .header {
+        padding: 160px 20px;
+    }
     .header .header-logo {
     width: 50%;
     margin-bottom: 40px;
