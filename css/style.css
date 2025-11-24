@@ -50,6 +50,11 @@ body {
     margin-left: 20px;
     font-weight: bold;
     font-size: 0.975em;
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+.menu a:hover {
+    font-size: 1em;
+    color: #ffc400;
 }
 
 /* Hamburger Menu */
@@ -71,6 +76,7 @@ body {
     transition: right 0.3s ease;
     z-index: 99;
     overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar a {
@@ -80,6 +86,7 @@ body {
     color: #333;
     font-weight: bold;
 }
+
 
 .sidebar.active {
     right: 0;
