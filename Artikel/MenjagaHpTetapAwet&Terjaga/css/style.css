@@ -1,0 +1,190 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #A1E3F9; /* Warna dasar biru muda */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px; /* Tambahkan padding-top sebesar tinggi navbar */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Tinggi navbar */
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ruang {
+    color: #4300ff;
+}
+
+.kreasi {
+    color: #ffc400;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 0.975em;
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+.menu a:hover {
+    font-size: 1em;
+    color: #ffc400;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 60px; /* Set sidebar top position to be below navbar */
+    right: -250px;
+    width: 250px;
+    height: calc(100vh - 60px - 60px); /* Adjust height to not overlap footer */
+    background-color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 99;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+/* Article Styling */
+.container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container .featured-image {
+    display: block;
+    margin: 0 auto 20px; /* Atur margin atas, bawah, dan tengah horizontal */
+    width: 80%; /* Lebar gambar 80% dari container */
+    max-width: 500px; /* Lebar maksimum gambar 500px */
+    height: auto; /* Tinggi gambar menyesuaikan proporsi aslinya */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Efek bayangan opsional */
+}
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.container h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.container ul {
+    margin-bottom: 15px;
+}
+
+.container li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+/* Header Styling */
+.header {
+    background-color: #A1E3F9;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #3674B5;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    height: auto; /* Ensure footer height is fixed */
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

@@ -262,7 +262,7 @@ body {
     }
     .portfolio-item {
         width: calc(50% - 40px); /* Two items in a row on phones */
-        height:  calc(50% - 40px);
+        height:  calc(60% - 30px);
     }
 
     .portfolio-item h3 {
