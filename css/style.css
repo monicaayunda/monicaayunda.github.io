@@ -253,6 +253,10 @@ body {
     .hamburger {
         display: block;
     }
+    .header .header-logo {
+    width: 50%;
+    margin-bottom: 40px;
+    }
     .portfolio-item {
         width: calc(50% - 40px); /* Two items in a row on phones */
         height:  calc(50% - 40px);
