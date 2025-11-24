@@ -257,8 +257,8 @@ body {
         padding: 160px 20px;
     }
     .header .header-logo {
-    width: 50%;
-    margin-bottom: 40px;
+    width: 65%;
+    margin-bottom: 60px;
     }
     .portfolio-item {
         width: calc(50% - 40px); /* Two items in a row on phones */
